@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors</title>
+    <style>
+        body{
+            /* margin: 0;
+            padding: 0; */
+            background-color:black ;
+            color: white;
+        }
+        header::before{
+            background: url(https://learn.g2.com/hubfs/software-development.jpg) no-repeat center center/cover;
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+
+        }
+        li{
+            list-style: none;
+            padding: 10px;
+        }
+        .navigation{
+            font-size: 35px;
+            display: flex;
+        }
+        section{
+            margin: 10px 95px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 5px solid white; */
+            height: 250px;
+            justify-content: flex-start;
+        }
+        /* section::before{
+            content: "This is a content";
+        } */
+
+        /* section::after{
+            content: "This is a content";
+        } */
+
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            text-align: center;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to coding world</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, at accusantium numquam possimus eveniet, beatae veritatis expedita reiciendis debitis, provident velit aliquam recusandae ipsum architecto tenetur a omnis reprehenderit. Fugiat dicta quod aliquam harum.</p>
+    </section>
+    
+</body>
+</html>
